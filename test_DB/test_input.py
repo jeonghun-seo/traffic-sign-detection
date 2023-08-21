@@ -12,8 +12,7 @@ now = datetime.now()
 
 def insert(vo):
     # db connect
-    con = pymysql.connect(host='localhost', user='root', password='1234',
-                          db='testdb', charset='utf8')
+    con = pymysql.connect(host='localhost', user='root', password='1234', db='testdb', charset='utf8')
     cur = con.cursor()  # sql문 대신 실행해주고 결과 반환해줄 커서 객체 생성
 
     # 일단 input 받기
